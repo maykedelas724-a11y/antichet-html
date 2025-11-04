@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antichet ThnAC</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+    margin-top: 60px;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ff33cc; /* rosa forte */
+    text-align: center;
+    text-shadow: 0 0 15px rgba(255, 51, 204, 0.7);
+  }
+
+  .section {
+    width: 95%;
+    max-width: 1500px;
+    margin-top: 40px;
+  }
+
+  .section h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    border-left: 4px solid #ff33cc;
+    padding-left: 10px;
+    color: #ff33cc;
+    text-shadow: 0 0 12px rgba(255, 51, 204, 0.6);
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: flex-start;
+  }
+
+  .card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 330px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 51, 204, 0.4);
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #111;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .card-content {
+    padding: 20px 15px 30px;
+    text-align: center;
+  }
+
+  .card-content h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .card-content button {
+    background: #ff33cc;
+    border: none;
+    color: white;
+    font-size: 0.95em;
+    font-weight: 500;
+    padding: 9px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .card-content button:hover {
+    background: #e600b3;
+    box-shadow: 0 0 12px rgba(255, 51, 204, 0.6);
+  }
+
+  footer {
+    margin-top: 60px;
+    padding: 25px;
+    font-size: 0.9em;
+    color: #777;
+  }
+
+  /* Canvas de partículas */
+  #particle-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  body > * { position: relative; z-index: 1; }
+</style>
+</head>
+<body>
+
+<h1>Antichet ThnAC</h1>
+
+<!-- ThnAC GERAIS -->
+<div class="section">
+  <h2>Fiveguard Gerais</h2>
+  <div class="cards-container">
+    <div class="card">
+      <img src="https://i.imgur.com/oDihsHV.png" alt="Visão de Cria RJ ">
+      <div class="card-content">
+        <h3>Visão de Cria RJ </h3>
+        <button onclick="window.location.href='fivem://connect/cfx.re/join/zrmgdd'">Entrar na cidade</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/xLqKCS2.png" alt="Lap">
+      <div class="card-content">
+        <h3>Lapa</h3>
+        <button onclick="window.location.href='fivem://connect/cfx.re/join/arxxp9'">Entrar na cidade</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/54jAKGH.png" alt="Clima RJ">
+      <div class="card-content">
+        <h3>Clima RJ</h3>
+        <button onclick="window.location.href='fivem://connect/cfx.re/join/jyekzl'">Entrar na cidade</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/bJ8HR8P.png" alt="Marcone Roleplay">
+      <div class="card-content">
+        <h3>Marcone Roleplay</h3>
+        <button onclick="window.location.href='fivem://connect/cfx.re/join/pm7pgm'">Entrar na cidade</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1>Cidades Aleatorias</h1>
+
+<div class="section">
+  <h2>Aleatorias</h2>
+  <div class="cards-container">
+    <div class="card">
+      <img src="https://i.imgur.com/gI1KjQq.png" alt="Filadelfia ">
+      <div class="card-content">
+        <h3>Filadelfia</h3>
+        <button onclick="window.location.href='fivem://connect/cfx.re/join/pl43j7'">Entrar na cidade</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/usPqznZ.png" alt="Bella">
+      <div class="card-content">
+        <h3>Bella</h3>
+        <button onclick="window.location.href='fivem://connect/cfx.re/join/ygvraj'">Entrar na cidade</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/JMy5rAn.png" alt="Lisboa">
+      <div class="card-content">
+        <h3>Lisboa</h3>
+        <button onclick="window.location.href='fivem://connect/cfx.re/join/mazojv'">Entrar na cidade</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/Ryqh9PL.png" alt="Oasis">
+      <div class="card-content">
+        <h3>Oasis</h3>
+        <button onclick="window.location.href='fivem://connect/cfx.re/join/arr753'">Entrar na cidade</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Canvas de partículas rosa -->
+<canvas id="particle-canvas"></canvas>
+
+<script>
+const canvas = document.getElementById('particle-canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const particles = [];
+const particleCount = 150;
+
+class Particle {
+  constructor() { this.reset(); }
+  reset() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.vx = (Math.random() - 0.5) * 0.7;
+    this.vy = (Math.random() - 0.5) * 0.7;
+    this.size = Math.random() * 2 + 1;
+  }
+  draw() {
+    ctx.fillStyle = 'rgba(255,51,204,0.8)';
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI*2);
+    ctx.fill();
+  }
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+    if(this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+  }
+}
+
+for(let i=0;i<particleCount;i++){particles.push(new Particle());}
+
+function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  for(let i=0;i<particles.length;i++){
+    particles[i].draw();
+    particles[i].update();
+    for(let j=i+1;j<particles.length;j++){
+      const dx=particles[i].x-particles[j].x;
+      const dy=particles[i].y-particles[j].y;
+      const dist=Math.sqrt(dx*dx+dy*dy);
+      if(dist<120){
+        ctx.strokeStyle='rgba(255,51,204,0.2)';
+        ctx.lineWidth=0.7;
+        ctx.beginPath();
+        ctx.moveTo(particles[i].x,particles[i].y);
+        ctx.lineTo(particles[j].x,particles[j].y);
+        ctx.stroke();
+      }
+    }
+  }
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+window.addEventListener('resize',()=>{
+  canvas.width=window.innerWidth;
+  canvas.height=window.innerHeight;
+});
+</script>
+
+</body>
+</html>
